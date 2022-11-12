@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-11T23:13:42Z" name="Default suite" finished-at="2022-11-11T23:14:29Z" duration-ms="46629">
+    <groups>
+      <group name="regression">
+        <method signature="E2E_SmokeSet.TC001_SuccessfulOrder(java.util.Map)[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" name="TC001_SuccessfulOrder" class="testCases.E2E_SmokeSet"/>
+        <method signature="E2E_SmokeSet.TC003_Search(java.util.Map)[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" name="TC003_Search" class="testCases.E2E_SmokeSet"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2022-11-11T23:13:42Z" name="Default test" finished-at="2022-11-11T23:14:29Z" duration-ms="46629">
+      <class name="testCases.E2E_SmokeSet">
+        <test-method is-config="true" signature="Login()[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" started-at="2022-11-11T18:13:42Z" name="Login" finished-at="2022-11-11T18:13:50Z" duration-ms="8049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TC003_Search(java.util.Map)[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" started-at="2022-11-11T18:13:50Z" name="TC003_Search" finished-at="2022-11-11T18:14:05Z" duration-ms="14385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{__index=1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_Search -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" started-at="2022-11-11T18:14:05Z" name="tearDown" finished-at="2022-11-11T18:14:05Z" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" started-at="2022-11-11T18:14:05Z" name="Login" finished-at="2022-11-11T18:14:09Z" duration-ms="4111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="TC001_SuccessfulOrder(java.util.Map)[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" started-at="2022-11-11T18:14:09Z" name="TC001_SuccessfulOrder" finished-at="2022-11-11T18:14:28Z" duration-ms="18850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Product=ZARA COAT 3, PaymentOption=Credit Card, CCNum=0000123456789012, Expiry=1225, CVV=024, NameOnCard=Sushil Gosavi, Email=sushil.gosavi@gmail.com, AddressCountry=United States, __index=1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_SuccessfulOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.E2E_SmokeSet@4de41af9]" started-at="2022-11-11T18:14:29Z" name="tearDown" finished-at="2022-11-11T18:14:29Z" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.E2E_SmokeSet -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

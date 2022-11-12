@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite123]" guice-stage="DEVELOPMENT">
+  <parameter name="takeScreenprintatAlways" value="true"/>
+  <parameter name="takeScreenprintatFail" value="false"/>
+  <listeners>
+    <listener class-name="ListenersPackage.ListenerTest"/>
+  </listeners>
+  <test name="Test123(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.E2E_SmokeSet">
+        <methods>
+          <include name="TC003_Search" invocation-numbers="0"/>
+          <include name="TC001_SuccessfulOrder" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.E2E_SmokeSet -->
+    </classes>
+  </test> <!-- Test123(failed) -->
+</suite> <!-- Failed suite [Suite123] -->

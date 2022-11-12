@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite123">
+	<listeners>
+		<listener class-name="ListenersPackage.ListenerTest"></listener>
+	</listeners>
+	<parameter name="takeScreenprintatFail" value="false" />
+	<parameter name="takeScreenprintatAlways" value="true" />
+	<test name="Test123">
+		<groups>
+			<run>
+				<include name="regression">></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.E2E_SmokeSet" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
