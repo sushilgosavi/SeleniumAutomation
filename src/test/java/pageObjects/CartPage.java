@@ -14,7 +14,7 @@ import io.qameta.allure.model.Status;
 public class CartPage  extends BasePage{
 
 	public WebDriver driver;
-
+	public int Salary=0;
 	public CartPage(WebDriver driver) {
 		this.driver = driver;
 	}
