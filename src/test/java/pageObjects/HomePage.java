@@ -23,7 +23,7 @@ import io.qameta.allure.model.Status;
 
 public class HomePage extends BasePage {
 	public static WebDriver driver;
-	
+	public static String Name="";
 	public HomePage(WebDriver driver) {
 		this.driver = (driver);
 	}
@@ -32,7 +32,6 @@ public class HomePage extends BasePage {
 
 	public WebElement searchCheckBox(String searchCheckBox) {
 		String newXPath = getXPathReplaced(leftNavSearchCheckBox, searchCheckBox);
-		// System.out.println("newXPath = " + newXPath);
 		return driver.findElement(By.xpath(newXPath));
 	}
 
@@ -54,11 +53,8 @@ public class HomePage extends BasePage {
 
 	public WebElement view(String itemname) {
 
-		// HomePage hp = new HomePage(driver);
-		// List<WebElement> itemHeader;
 		List<WebElement> products = (List<WebElement>) HomePage.itemHeader();
 		for (WebElement product : products) {
-			// System.out.println("product.getText() = " + product.getText());
 			if (product.getText().trim().equalsIgnoreCase(itemname)) {
 				WebElement view = product.findElement(By.xpath("../button[contains(@class,'w-40')]"));
 				return view;

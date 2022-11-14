@@ -142,7 +142,7 @@ public class BasePage {
 
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(
-				"D:\\Java\\Udemy_WorkSpace\\E2EProject - Copy\\src\\test\\java\\utility\\globalVariables.properties");
+				"C:\\Users\\IEUser\\git\\SeleniumAutomation\\src\\test\\java\\utility\\globalVariables.properties");
 		prop.load(fis);
 
 		return prop.getProperty(PropName);
